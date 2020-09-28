@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Rubik", sans-serif;
+  color: #252b46;
+}
+
+p {
+  color: #9194a1;
+  font-family: "Rubik", sans-serif;
+}
+
+h1, h2, h2, h3, h4 {
+  color: #252b46;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+}
+
+.wrapper {
+  width: 80%;
+  max-width: 1350px;
+  margin: auto;
+}
+
+.display-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .container {
+  margin-top: 50px;
+}
+
+header .container .logo i {
+  display: none;
+}
+
+header .container .logo img {
+  width: 180px;
+}
+
+header .container nav ul li:nth-child(4) a {
+  color: #fff;
+  font-weight: 400;
+  padding: 9px 35px;
+  background: #fa5757;
+  border-radius: 5px;
+}
+
+header .container nav a {
+  display: block;
+  margin-right: 50px;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.banner .container {
+  margin: 100px auto;
+}
+
+.banner .container .column {
+  width: 70%;
+  margin-right: 20px;
+}
+
+.banner .container .column h1 {
+  font-size: 3.4rem;
+  font-weight: 500;
+}
+
+.banner .container .column p {
+  margin: 20px 0px;
+  font-size: 1.2rem;
+  max-width: 550px;
+  line-height: 1.5;
+}
+
+.banner .container .column .crome {
+  padding: 15px 25px;
+  background: #5368df;
+  color: #fff;
+  border-radius: 5px;
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.banner .container .column .firefox {
+  padding: 15px 25px;
+  background: #dddddd;
+  color: #fff;
+  border-radius: 5px;
+  color: #b3b0b0;
+}
+
+.banner .container .img {
+  width: 80%;
+}
+
+.banner .container .img img {
+  width: 100%;
+}
+
+.features .container {
+  text-align: center;
+}
+
+.features .container h2 {
+  font-size: 2.2rem;
+}
+
+.features .container p {
+  max-width: 550px;
+  margin: 20px auto;
+  line-height: 1.5;
+  font-size: 1.19rem;
+}

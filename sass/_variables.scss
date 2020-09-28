@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+
+$font-rubyk:'Rubik', sans-serif; // Unico Fuente utilizada
+
+//** PALETA DE COLORES  **//
+
+$button:hsl(231, 69%, 60%) ;
+$hover:hsl(0, 94%, 66%);
+$txt:hsl(229, 8%, 60%) ;
+$footer: hsl(229, 31%, 21%);
+ 
+@mixin crome {
+    padding: 15px 25px;
+    background: $button;
+    color: #fff;
+    border-radius: 5px;
+    
+}
+
+@mixin firefox {
+    padding: 15px 25px;
+    background: rgb(221, 221, 221);
+    color: #fff;
+    border-radius: 5px;
+    color: rgb(179, 176, 176);
+    
+}

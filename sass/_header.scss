@@ -1,0 +1,35 @@
+header{
+    .container{
+        margin-top: 50px;
+
+        .logo{
+            i{
+                display: none;
+            }
+
+            img{
+                width:180px;
+            }
+        }
+
+        nav{
+
+            ul li:nth-child(4) a{
+                color: #fff;
+                font-weight: 400;
+                padding: 9px 35px;
+                background: $hover;
+                border-radius: 5px;
+            }
+           
+            a{
+                display: block;
+                margin-right: 50px;
+                font-size: 1rem;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+            }
+           
+        }
+    }
+}
