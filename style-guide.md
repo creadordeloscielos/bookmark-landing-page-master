@@ -11,13 +11,13 @@ The designs were created to the following widths:
 
 ### Primary
 
-- Soft Blue: hsl(231, 69%, 60%)   Buttons
-- Soft Red: hsl(0, 94%, 66%)     Hover
+- Soft Blue: hsl(231, 69%, 60%)
+- Soft Red: hsl(0, 94%, 66%)
 
 ### Neutral
 
-- Grayish Blue: hsl(229, 8%, 60%)   Text
-- Very Dark Blue: hsl(229, 31%, 21%)   Footer
+- Grayish Blue: 
+- Very Dark Blue: 
 
 ## Typography
 

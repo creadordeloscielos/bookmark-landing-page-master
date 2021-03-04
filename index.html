@@ -1,84 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="css/fontello.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./media/favicon-32x32.png">
   <link rel="stylesheet" href="css/css.css">
-  
+  <link rel="stylesheet" href="css/fontello.css">
+
+
   <title>Frontend Mentor | Bookmark landing page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
 
   <header>
-    <div class="container">
-      <div class="menu wrapper display-flex">
-        <div class="logo display-flex">
-          <img src="media/logo-bookmark.svg" alt="Logo">
-          <i class="icon-menu"></i>
-        
-        </div>
-        <nav>
-          <ul class="display-flex">
-            <li><a href="#">Features</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Login</a></li>
-          </ul>
-        </nav>
+    <div class="container wrapper dp-flex">
+
+      <div class="menu dp-flex">
+        <img src="media/logo-bookmark.svg" alt="logo-bookmark">
+        <i class="icon-menu"></i>
       </div>
+
+      <nav>
+        <ul class="dp-flex">
+          <li><a href="#"> Features</a></li>
+          <li><a href="#"> Pricing</a></li>
+          <li><a href="#"> Contact</a></li>
+          <li><a href="#"> Login</a></li>
+        </ul>
+      </nav>
+
     </div>
   </header>
 
-  <section class="banner">
-      <div class="container wrapper display-flex">
-        <div class="column">
-          <h1>A Simple Bookmark Manager </h1>
-          <p>
-            A clean and simple interface to organize your favourite websites. Open a new 
-            browser tab and see your sites load instantly. Try it for free.
-          </p>
-          <a href="#" class="crome"> Get it on Chrome</a>
-          <a href="#" class="firefox">   Get it on Firefox</a>
+  <div class="banner">
+    <div class="container wrapper dp-flex">
+      <div class="txt">
+        <h1> A Simple Bookmark Manager </h1>
+        <p> A clean and simple interface to organize your favourite websites. Open a new
+          browser tab and see your sites load instantly. Try it for free.</p>
+        <a href="#">Get it Chrome</a>
+        <a href="#">Get it Firefox</a>
+      </div>
+      <div class="img">
+        <img src="media/illustration-hero.svg" alt="img">
+      </div>
+    </div>
+  </div>
+
+  <div class="feactures">
+    <div class="container">
+      <div class="txt">
+        <h2> </h2>
+        <p> </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="download">
+    <div class="container">
+      <div class="txt">
+        <h3>
+          Download the extension
+        </h3>
+        <p>
+          We've got more browsers in the pipeline. Please do let us know if you've got
+          a favourite you'd like us to priortize.
+        </p>
+      </div>
+      <div class="cards  dp-flex">
+        <div class="card">
+          <img src="media/logo-chrome.svg" alt="crome">
+          <h4>Add to Chrome</h4>
+          <p>Minium version 62</p>
+          <img class="dote" src="media/bg-dots.svg" alt="doote">
+          <a href="#">Add & Install Extension</a>
         </div>
-        <div class="img">
-          <img src="media/illustration-hero.svg" alt="tab-1">
+
+        <div class="card">
+          <img src="media//logo-firefox.svg" alt="Firefox">
+          <h4>Add to Chrome</h4>
+          <p>Minium version 55</p>
+          <img class="dote" src="media/bg-dots.svg" alt="doote">
+          <a href="#">Add & Install Extension</a>
+        </div>
+
+        <div class="card">
+          <img src="media/logo-opera.svg" alt="Opera">
+          <h4>Add to Chrome</h4>
+          <p>Minium version 46</p>
+          <img class="dote" src="media/bg-dots.svg" alt="doote">
+          <a href="#">Add & Install Extension</a>
         </div>
       </div>
-  </section>
+    </div>
+  </div>
 
-  <section class="features">
+  <div class="frequently">
+
+    <div class="container wrapper ">
+
+      <div class="txt">
+        <h2>Frequently Asked Questions </h2>
+        <p>Here are some of our FAQs. if you have any other questions you'd like answered please feel free to email us.
+        </p>
+      </div>
+
+      <div class="acordeon ">
+
+        <!-- Question 1 -->
+        <div class="container">
+          <div class="title dp-flex">
+            <p>What is Bookmark</p>
+            <img src="media/icon-arrow.svg" alt="arrow">
+          </div>
+          <div class="txt Ocultar">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt
+              justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
+            </p>
+          </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="container">
+          <div class="title dp-flex">
+            <p> How can I request a new browser?</p>
+            <img src="media/icon-arrow.svg" alt="arrow">
+          </div>
+          <div class="txt">
+            <p>
+              Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula.
+              Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
+              ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies.
+              Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
+            </p>
+          </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="container">
+          <div class="title dp-flex">
+            <p> Is there a mobile app?</p>
+            <img src="media/icon-arrow.svg" alt="arrow">
+          </div>
+          <div class="txt Ocultar">
+            <p>
+              Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum
+              urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed
+              sollicitudin ex et ultricies bibendum.
+            </p>
+          </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="container">
+          <div class="title dp-flex">
+            <p>What about other Chromium browsers?</p>
+            <img src="media/icon-arrow.svg" alt="arrow">
+          </div>
+          <div class="txt Ocultar">
+            <p>
+              Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam
+              vitae neque eget nisl gravida pellentesque non ut velit.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+<a href="#">More Info</a>
+
+    </div>
+  </div>
+
+  <div class="boletin">
+    <div class="wrapper">
+      <p>35,000+ ALREADY JOINED</p>
+      <h3>Stay up-to-date with what we're doing </h3>
+      <form action="#">
+
+        <input type="text" placeholder="Enter your email address">
+        <input type="submit" value="Contact Us">
+      </form>
+
+    </div>
+  </div>
+
+  <footer>
     <div class="container wrapper">
-      <h2>  Features</h2>
-      <p> Our aim is to make it quick and easy for you to access your favourite websites. 
-        Your bookmarks sync between your devices so you can access them on the go.</p>
+
+
     </div>
 
-  </section>
-
-
-
-  
-
- 
-
-  
-
-
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
   </footer>
+
 </body>
+
 </html>

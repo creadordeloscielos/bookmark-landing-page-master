@@ -1,35 +1,67 @@
-header{
-    .container{
-        margin-top: 50px;
+.menu {
+    padding: 40px 0px;
+}
 
-        .logo{
-            i{
-                display: none;
-            }
+p,a,h1,h2,h3,h4{
+    font-family: $Rubik;
+}
 
-            img{
-                width:180px;
-            }
-        }
+header img{
+    width: 150px;
+}
 
-        nav{
-
-            ul li:nth-child(4) a{
-                color: #fff;
-                font-weight: 400;
-                padding: 9px 35px;
-                background: $hover;
-                border-radius: 5px;
-            }
-           
-            a{
-                display: block;
-                margin-right: 50px;
-                font-size: 1rem;
-                letter-spacing: 1px;
-                text-transform: uppercase;
-            }
-           
-        }
+nav a{
+    margin-left: 40px;
+    color:$DarkBlue;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 3px;
+    font-weight: 300;
+    transition: color 0.5s ease-in-out;
+ 
+    &:hover{
+        color: $Orange;
     }
 }
+
+nav ul li:last-child a{
+   @include btn-orange;
+}
+
+.banner{
+    padding: 40px 0px;
+    position: relative;
+
+    h1{
+        color: $DarkBlue;
+        font-size: 3rem;
+        font-weight: 500;
+        max-width: 500px;
+    }
+
+    p{
+        color: $Grey;
+        padding: 20px 0px;
+        line-height: 1.5;
+        max-width: 450px;
+        font-size: 1.1rem;
+    }
+
+    
+    a:nth-of-type(1) {    // USO DE LOS SELECTORES nth PARA NO CREAR CLASES DE MAS PARA CADA ELEMENTO a Y ASI EVITAR EL USO DE MAS CODIGO 
+        @include btn-blue;
+        margin-right: 15px;
+
+    }
+
+    a:nth-of-type(2) {  // USO DE LOS SELECTORES nth PARA NO CREAR CLASES DE MAS PARA CADA ELEMENTO a Y ASI EVITAR EL USO DE MAS CODIGO 
+        @include btn-white;
+
+    }
+        img{
+            width: 100%;
+            }
+
+    
+}
+

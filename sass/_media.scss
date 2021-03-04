@@ -1,0 +1,97 @@
+@media screen and (max-width:1000px){
+
+    .wrapper {
+        width: 90%;
+    }
+
+    .cards{
+        width: 90%;
+        margin: auto;
+        }    
+
+   .card {
+         margin: auto 10px;
+       }     
+
+}
+
+ @media screen and (max-width:950px){
+
+    .cards{
+        flex-direction: column;
+        }
+
+    .card {
+         margin-top: 30px !important;
+       }
+            
+}
+
+ @media screen and (max-width:768px){
+
+     .icon-menu {
+         display: block;
+         }
+
+     header .container{
+         display: block;
+         }
+
+
+     nav {
+         display: none;
+         }                
+
+  
+     .frequently {
+        margin: 60px auto;
+
+    .txt p{
+        max-width: 100%;
+        }
+    }
+
+    .acordeon {
+        max-width: 100%;
+         }
+
+
+}    
+
+@media screen and (max-width:600px){
+
+    .boletin {
+
+        h3{
+            font-size: 1.5rem;
+            }
+                
+        p{
+            font-size: .7rem;
+            }        
+        }
+
+    .boletin input[type=text] {
+    padding: 25px 20px;
+    width: 100%;
+    box-sizing: border-box;
+ }
+
+   .boletin input[type=submit] {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 15px;
+    font-size: 15px;
+}                        
+
+}
+
+
+
+
+
+
+
+
+
+

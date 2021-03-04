@@ -1,42 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
-}
-
-body{
-    font-size: 16px;
-}
-
-li {
-    list-style: none;
-}
-
-a{
-    text-decoration: none;
-    font-family: $font-rubyk;
-    color: $footer;
-}
-
-p{
-    color: $txt;
-    font-family: $font-rubyk;
-}
-
-h1,h2,h2,h3,h4{
-    color: $footer;
-    font-family: $font-rubyk;
-    font-weight: 500;
 }
 
 .wrapper{
-    width: 80%;
-    max-width: 1350px;
+    max-width: 1300px;
     margin: auto;
-}
+    width: 80%;
+    }
 
-.display-flex{
+a{
+    text-decoration: none;
+    }
+
+
+li{
+    list-style: none;
+    } 
+
+.dp-flex{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    }
+
+i {
+    display: none;
+    } 
+    
+.Mostrar{               // CLASE PARA MOSTRAR LOS PREGUNTAS ///
+    display: block;
 }
+
+.Ocultar{           // CLASE PARA OCUALTAR LAS PREGUNTAS //
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  // VARIABLES //
+
+      // FUENTES //   
+
+$Rubik:'Rubik', sans-serif;
+
+     // COLORES //      
+
+$Blue:hsl(231, 69%, 60%);
+$Orange:hsl(0, 94%, 66%);
+$Grey:hsl(229, 8%, 60%);
+$DarkBlue:hsl(229, 31%, 21%);
+
+     // MIXINS //   
+
+@mixin  btn-orange {  
+    color: #fff;
+    background:$Orange;
+    display: inline-block;
+    padding: 8px 33px;
+    border-radius: 5px;
+    transition: 0.5s ease-in-out;
+   
+    border: 2px solid #fff; // AGREGE EL BORDE DE 2PX COLOR BLANCO POR QUE AL HACER EL HOVER SE AGREGABA ESE PX DE MAS Y HACIA QUE SE MOVIERAN LOS ELEMNETOS a
+    &:hover{
+        color: $Orange;
+        border: 2px solid $Orange; // SOLO CAMBIO EL COLOR DEL LOS 2PX 
+        background: none;
+    }
+    
+}
+
+@mixin  btn-blue {  
+    color: #fff;
+    background:$Blue;
+    display: inline-block;
+    padding: 15px 35px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 400;
+    transition: 0.5s ease-in-out;
+    border: 2px solid #fff; // AGREGE EL BORDE DE 2PX COLOR BLANCO POR QUE AL HACER EL HOVER SE AGREGABA ESE PX DE MAS Y HACIA QUE SE MOVIERAN LOS ELEMNETOS a
+    &:hover{
+        color: $Blue;
+        border: 2px solid $Blue; // SOLO CAMBIO EL COLOR DEL LOS 2PX 
+        background: none;
+    }
+    
+} 
+
+@mixin  btn-white {  
+    color: $DarkBlue;
+    background:$Grey;
+    display: inline-block;
+    padding: 15px 35px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 400;
+    transition: 0.5s ease-in-out;
+    border: 2px solid #fff; // AGREGE EL BORDE DE 2PX COLOR BLANCO POR QUE AL HACER EL HOVER SE AGREGABA ESE PX DE MAS Y HACIA QUE SE MOVIERAN LOS ELEMNETOS a
+    &:hover{
+        color: $DarkBlue;
+        border: 2px solid $DarkBlue; // SOLO CAMBIO EL COLOR DEL LOS 2PX 
+        background: none;
+    }
+    
+}   
