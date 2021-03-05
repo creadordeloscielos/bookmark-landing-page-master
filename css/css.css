@@ -19,15 +19,9 @@ li {
 }
 
 .dp-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
 
 i {
@@ -61,7 +55,6 @@ nav a {
   font-size: 14px;
   letter-spacing: 3px;
   font-weight: 300;
-  -webkit-transition: color 0.5s ease-in-out;
   transition: color 0.5s ease-in-out;
 }
 
@@ -75,7 +68,6 @@ nav ul li:last-child a {
   display: inline-block;
   padding: 8px 33px;
   border-radius: 5px;
-  -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
   border: 2px solid #fff;
 }
@@ -87,7 +79,7 @@ nav ul li:last-child a:hover {
 }
 
 .banner {
-  padding: 40px 0px;
+  padding: 100px 0px;
   position: relative;
 }
 
@@ -95,14 +87,14 @@ nav ul li:last-child a:hover {
   color: #252b46;
   font-size: 3rem;
   font-weight: 500;
-  max-width: 500px;
+  width: 500px;
 }
 
 .banner p {
   color: #9194a1;
   padding: 20px 0px;
   line-height: 1.5;
-  max-width: 450px;
+  width: 450px;
   font-size: 1.1rem;
 }
 
@@ -114,7 +106,6 @@ nav ul li:last-child a:hover {
   border-radius: 6px;
   font-size: 15px;
   font-weight: 400;
-  -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
   border: 2px solid #fff;
   margin-right: 15px;
@@ -132,9 +123,8 @@ nav ul li:last-child a:hover {
   display: inline-block;
   padding: 15px 35px;
   border-radius: 6px;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 400;
-  -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
   border: 2px solid #fff;
 }
@@ -191,7 +181,6 @@ nav ul li:last-child a:hover {
   display: inline-block;
   padding: 8px 33px;
   border-radius: 5px;
-  -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
   border: 2px solid #fff;
   cursor: pointer;
@@ -226,7 +215,7 @@ nav ul li:last-child a:hover {
 }
 
 .download .txt p {
-  max-width: 550px;
+  width: 550px;
   margin: auto;
   text-align: center;
   font-size: 18px;
@@ -235,16 +224,13 @@ nav ul li:last-child a:hover {
 .cards {
   margin-top: 20px;
   margin-bottom: 60px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .card {
   margin: auto 15px;
   padding: 20px 0px;
-  -webkit-box-shadow: 0px 8px 18px -13px #00000082;
-          box-shadow: 0px 8px 18px -13px #00000082;
+  box-shadow: 0px 8px 18px -13px #00000082;
   border-radius: 13px;
   background-color: #fff;
   position: relative;
@@ -265,7 +251,6 @@ nav ul li:last-child a:hover {
   border-radius: 6px;
   font-size: 15px;
   font-weight: 400;
-  -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
   border: 2px solid #fff;
   display: block;
@@ -308,7 +293,6 @@ nav ul li:last-child a:hover {
   border-radius: 6px;
   font-size: 15px;
   font-weight: 400;
-  -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
   border: 2px solid #fff;
   display: block;
@@ -337,7 +321,7 @@ nav ul li:last-child a:hover {
 }
 
 .frequently .txt p {
-  max-width: 500px;
+  width: 500px;
   margin: auto;
   font-size: 18px;
 }
@@ -353,12 +337,11 @@ nav ul li:last-child a:hover {
 
 .acordeon .title {
   cursor: pointer;
-  padding: 0px 5px;
+  padding: 20px 0px;
 }
 
 .acordeon .title p {
   font-size: 1.2rem;
-  padding: 15px 3px;
   font-family: 500;
   color: #252b46;
 }
@@ -372,7 +355,7 @@ nav ul li:last-child a:hover {
 }
 
 .acordeon .txt p {
-  margin: 10px auto;
+  margin: 5px 10px;
   line-height: 1.9;
   font-size: 16px;
 }
@@ -393,14 +376,17 @@ footer {
   .card {
     margin: auto 10px;
   }
+  .banner p {
+    font-size: .9rem;
+  }
+  .banner h1 {
+    font-size: 2.4rem;
+  }
 }
 
 @media screen and (max-width: 950px) {
   .cards {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .card {
     margin-top: 30px !important;
@@ -408,8 +394,34 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+  .banner {
+    padding: 10px 0px 40px 0px;
+  }
+  .banner h1 {
+    text-align: center;
+    width: 100%;
+    font-size: 1.5rem;
+  }
+  .banner .container {
+    flex-direction: column-reverse;
+  }
+  .banner .txt P {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    padding: 30px 0px;
+    max-width: 500px;
+  }
+  .banner .botones {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .menu {
+    padding-top: 30px;
+  }
   .icon-menu {
     display: block;
+    font-size: 18px;
   }
   header .container {
     display: block;
@@ -417,14 +429,36 @@ footer {
   nav {
     display: none;
   }
+  .download .txt h3 {
+    font-size: 1.5rem;
+    width: 90%;
+    margin: 20px auto;
+  }
+  .download .txt p {
+    font-size: 16px;
+    width: 90%;
+  }
   .frequently {
     margin: 60px auto;
   }
   .frequently .txt p {
     max-width: 100%;
+    font-size: 16px;
+    margin: auto;
+  }
+  .frequently .txt h2 {
+    font-size: 1.5rem;
   }
   .acordeon {
     max-width: 100%;
+  }
+  .acordeon .title p {
+    font-size: 1rem;
+  }
+  .acordeon .txt p {
+    font-size: 16px;
+    width: 100%;
+    margin: auto;
   }
 }
 
@@ -436,16 +470,29 @@ footer {
     font-size: .7rem;
   }
   .boletin input[type=text] {
-    padding: 25px 20px;
+    padding: 20px;
     width: 100%;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
   }
   .boletin input[type=submit] {
     width: 100%;
     margin-left: 0;
     margin-top: 15px;
     font-size: 15px;
+    height: 45px;
+  }
+}
+
+@media screen and (max-width: 394px) {
+  .botones {
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+  .botones a {
+    text-align: center;
+    display: block;
+    margin-right: 0px !important;
+    margin-top: 10px;
   }
 }
 /*# sourceMappingURL=css.css.map */

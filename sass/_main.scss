@@ -69,7 +69,7 @@
             }
 
         p{
-            max-width: 550px;
+            width: 550px;
             margin: auto;
             text-align: center;
             font-size: 18px;
@@ -152,7 +152,7 @@
             font-weight: 500;
         }
         p{
-            max-width: 500px;
+            width: 500px;
             margin: auto;
             font-size: 18px;
         }
@@ -170,14 +170,12 @@
 
     .title {
         cursor: pointer;
-        padding: 0px 5px;
+        padding: 20px 0px;
       
         p{
             font-size: 1.2rem;
-            padding: 15px 3px;
             font-family: 500;
             color: $DarkBlue;
-          
         }
 
         &:hover {
@@ -190,7 +188,7 @@
     .txt{
         text-align: initial;
         p{
-            margin: 10px auto;
+            margin: 5px 10px;
             line-height: 1.9;
             font-size: 16px;
         }
