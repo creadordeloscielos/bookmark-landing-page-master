@@ -28,13 +28,19 @@ li{
 
 i {
     display: none;
-    } 
+    z-index: 1;
+    }
+
+.icon-cancel {
+    display:none;
+    color:#fff;      // ICONO PARA CERRAR MENU    
+    }         
     
-.Mostrar{               // CLASE PARA MOSTRAR LOS PREGUNTAS ///
-    display: block;
+.mostrar{               // CLASE PARA MOSTRAR LOS PREGUNTAS ///
+    top:0;
 }
 
-.Ocultar{           // CLASE PARA OCUALTAR LAS PREGUNTAS //
+.ocultar{           // CLASE PARA OCUALTAR LAS PREGUNTAS //
     display: none;
 }
 

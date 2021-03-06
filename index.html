@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="css/fontello.css">
 
 
+
   <title>Frontend Mentor | Bookmark landing page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -33,16 +34,22 @@
 
       <div class="menu dp-flex">
         <img src="media/logo-bookmark.svg" alt="logo-bookmark">
-        <i class="icon-menu"></i>
+        <i class="icon-menu" id="btn"></i>
+        <i class="icon-cancel"></i>
+        
       </div>
 
-      <nav>
+      <nav id="menu">
         <ul class="dp-flex">
           <li><a href="#"> Features</a></li>
           <li><a href="#"> Pricing</a></li>
           <li><a href="#"> Contact</a></li>
           <li><a href="#"> Login</a></li>
         </ul>
+        <div class="redes">
+          <i class="icon-facebook"></i>
+          <i class="icon-twitter"></i>
+        </div>
       </nav>
 
     </div>
@@ -212,7 +219,7 @@
     </div>
 
   </footer>
-
+  <script src="js/main.js"></script>
 </body>
 
 </html>
