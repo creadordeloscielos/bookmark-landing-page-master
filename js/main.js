@@ -1,5 +1,6 @@
 let btn = document.getElementById("btn");
 let menu = document.getElementById("menu");
+let close = document.getElementById('close');
 contador = 0;
 
 btn.addEventListener("click", function () {
@@ -9,9 +10,19 @@ btn.addEventListener("click", function () {
         contador = 1;
 
     } else {
-        menu.classList.remove = ("mostrar");
-        alert("Quitando");
+        menu.classList.remove("mostrar");
         contador = 0;
     }
 
 })
+
+window.addEventListener("resize" , function(){
+
+    if(screen.width > 768){
+
+        menu.classList.remove("mostrar");
+        contador = 0;
+
+    }
+})
+

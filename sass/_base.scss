@@ -31,19 +31,23 @@ i {
     z-index: 1;
     }
 
-.icon-cancel {
-    display:none;
-    color:#fff;      // ICONO PARA CERRAR MENU    
-    }         
-    
+.icon-cancel{
+  display: none;
+    }    
+
+
 .mostrar{               // CLASE PARA MOSTRAR LOS PREGUNTAS ///
-    top:0;
+    top: 0;
 }
 
 .ocultar{           // CLASE PARA OCUALTAR LAS PREGUNTAS //
-    display: none;
+  display: none;
 }
 
+.show {
+    display: block;
+    border: 1px solid red;
+    }
 
 
 

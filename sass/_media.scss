@@ -73,9 +73,7 @@
     .menu {
         padding-top: 30px;
 
-        img{
-            filter: grayscale(75%);
-            }
+    
     }
 
     .icon-menu {
@@ -88,14 +86,14 @@
     }
 
     nav {
-        background-color: #252b46e6;
         position: absolute;
-        top: -100%;
         left: 0;
         height: 100%;
         width: 100%;
-         transition:all 1s ease-in-out ;
-        
+        top: -100%;
+        background: #252b46cc;
+        transition: .8s all ease-in-out;
+ 
         ul {
            display: block !important;
            padding-top:80px;
